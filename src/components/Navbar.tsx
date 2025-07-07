@@ -16,9 +16,9 @@ function NavBar() {
 		router.push('/'); // Redirect to login or home page
 	};
 	return (
-		<div className="flex flex-col p-4 border-r-1 border-gray-400 justify-between bg-gray-100">
+		<div className="flex flex-col h-full p-4 justify-between bg-white">
 			<div>
-				<div className="flex items-center justify-center mb-8 border-b-1  border-gray-300 py-4">
+				<div className="flex items-center justify-center mb-8 pb-4 border-b border-gray-200">
 					<Image
 						src={logo}
 						alt="logo"
@@ -30,61 +30,68 @@ function NavBar() {
 						<p className="font-normal italic text-sm">(Admin)</p>
 					</div>
 				</div>
-				<div>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Users
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Restaurants
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Agents
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Products
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Orders
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Transactions
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Receipts
-				</Link>
-				<Link
-					href="/stores"
-					className="block mb-2 hover:bg-orange-400 p-2 hover:rounded"
-				>
-					Analysis
-				</Link>
-			</div>
+				<div className="space-y-1">
+					<Link
+						href="/users"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Users
+					</Link>
+					<Link
+						href="/restaurants"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Restaurants
+					</Link>
+					<Link
+						href="/agents"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Agents
+					</Link>
+					<Link
+						href="/products"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Products
+					</Link>
+					<Link
+						href="/orders"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Orders
+					</Link>
+					<Link
+						href="/transactions"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Transactions
+					</Link>
+					<Link
+						href="/receipts"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Receipts
+					</Link>
+					<Link
+						href="/analysis"
+						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
+					>
+						Analysis
+					</Link>
+				</div>
 			</div>
 			
-			<div className="flex justify-between items-center text-sm">
-				<button className='hover:bg-orange-400 p-2 hover:rounded'>Settings</button>
-				<button onClick={handleLogout} className='hover:bg-orange-400 p-2 hover:rounded'>Logout</button>
+			<div className="space-y-2">
+				<button className='w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors'>
+					Settings
+				</button>
+				<button 
+					onClick={handleLogout} 
+					className='w-full text-left px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors'
+				>
+					Logout
+				</button>
 			</div>
 		</div>
 	);
