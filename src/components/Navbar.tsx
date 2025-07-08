@@ -67,14 +67,14 @@ function NavBar() {
 					>
 						Transactions
 					</Link>
-					<Link
+					{/* <Link
 						href="/receipts"
 						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
 					>
 						Receipts
-					</Link>
+					</Link> */}
 					<Link
-						href="/analysis"
+						href="/dashboard"
 						className="block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 rounded-lg transition-colors"
 					>
 						Analysis
